@@ -21,7 +21,7 @@ form.addEventListener("submit", async (e) => {
   const loadingMessage = addMessage("bot", "Typing...");
 
   try {
-    const res = await fetch("/api/chat", {
+    const res = await fetch("https://chatbot-production-ad31.up.railway.app/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
