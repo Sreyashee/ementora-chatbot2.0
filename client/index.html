@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+    }
+
+    #chat {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background: white;
+      height: 400px;
+      overflow-y: auto;
+    }
+
+    .message {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .user {
+      background: #cce5ff;
+      text-align: right;
+    }
+
+    .bot {
+      background: #f8d7da;
+      text-align: left;
+    }
+
+    #form {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    #input {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat"></div>
+  <form id="form">
+    <input type="text" id="input" placeholder="Ask something..." required />
+    <button id="sendBtn" type="submit">Send</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
+
