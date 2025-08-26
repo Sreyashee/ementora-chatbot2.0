@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f8e6f7; /* soft pinkish-purple */
+  margin: 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #a64ca6; /* deeper purple for heading */
+}
+
+/* Chat container */
+#chat {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background: #fff0f8; /* very light pink */
+  border: 2px solid #d19ed9; /* soft purple border */
+  border-radius: 12px;
+  height: 400px;
+  overflow-y: auto;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(209, 158, 217, 0.3);
+}
+
+/* Chat messages */
+.message {
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* User messages */
+.user {
+  background: #f4c2f4; /* pinkish bubble */
+  color: #4a004a;
+  align-self: flex-end;
+  display: block;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Bot messages */
+.bot {
+  background: #d8b4ff; /* purplish bubble */
+  color: #330066;
+  align-self: flex-start;
+  display: block;
+  text-align: left;
+  margin-right: auto;
+}
+
+/* Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+/* Input box */
+#input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #d19ed9;
+  outline: none;
+}
+
+/* Send button */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background: #a64ca6; /* purple button */
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c27bcb; /* lighter purple on hover */
+}
