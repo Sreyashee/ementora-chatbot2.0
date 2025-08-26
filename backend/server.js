@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // ⚠️ Put your OpenRouter API key here (keep it secret)
-const API_KEY = process.env.OPENROUTER_API_KEY;
+const API_KEY = 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;
 console.log("Using API key:", API_KEY ? "✅ Loaded" : "❌ Missing");
 
 
@@ -53,4 +53,5 @@ app.post("/api/chat", async (req, res) => {
 
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
 
