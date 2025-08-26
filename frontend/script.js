@@ -23,7 +23,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     // Call your backend API, not OpenRouter directly
-    const res = await fetch("http://localhost:3000/api/chat", {
+    const res = await fetch("https://ementora-chatbot2-0.onrender.com/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
@@ -37,3 +37,4 @@ form.addEventListener("submit", async (e) => {
     loading.textContent = `⚠️ Error: ${err.message}`;
   }
 });
+
